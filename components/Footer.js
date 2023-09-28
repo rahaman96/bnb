@@ -5,6 +5,7 @@ import instagram from '../public/assets/images/Component 7.png'
 import linkedin from '../public/assets/images/Component 8.png'
 import twiter from '../public/assets/images/Component 9.png'
 import email from '../public/assets/images/Component 10.png'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -61,21 +62,51 @@ const Footer = () => {
                 </div>
                 <div className="flex gap-6 md:mt-0 mt-5">
                     <a href="">
-                        <img src={facebook.src} alt="" />
+                        {/* <img src={facebook.src} alt="" /> */}
+                        <Image
+                            alt="facebook"
+                            src={facebook.src}
+                            width={25}
+                            height={25}
+                        />
                     </a>
 
                     <a href="">
-                        <img src={instagram.src} alt="" />
+                        {/* <img src={instagram.src} alt="" /> */}
+                        <Image
+                            alt="facebook"
+                            src={instagram.src}
+                            width={25}
+                            height={25}
+                        />
                     </a>
                     <a href="">
-                        <img src={linkedin.src} alt="" />
+                        {/* <img src={linkedin.src} alt="" /> */}
+                        <Image
+                            alt="facebook"
+                            src={linkedin.src}
+                            width={25}
+                            height={25}
+                        />
                     </a>
 
                     <a href="">
-                        <img src={twiter.src} alt="" />
+                        {/* <img src={twiter.src} alt="" /> */}
+                        <Image
+                            alt="facebook"
+                            src={twiter.src}
+                            width={25}
+                            height={25}
+                        />
                     </a>
                     <a href="">
-                        <img src={email.src} alt="" />
+                        {/* <img src={email.src} alt="" /> */}
+                        <Image
+                            alt="facebook"
+                            src={email.src}
+                            width={25}
+                            height={25}
+                        />
                     </a>
                 </div>
 

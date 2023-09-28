@@ -2,6 +2,7 @@ import React from 'react'
 import Womanthinking from '../public/assets/images/Woman thinking-pana.png'
 import Onlineshopping from '../public/assets/images/Online shopping-pana.png'
 import Portfolio from '../public/assets/images/Portfolio Update-pana.png'
+import Image from 'next/image'
 
 const Features = () => {
     return (
@@ -16,7 +17,20 @@ const Features = () => {
                 <div className="flex flex-wrap -m-4 mx-auto justify-center">
                     <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                         <div className="h-full text-center">
-                            <img alt="testimonial" className=" mb-8 object-cover object-center  inline-block" src={Womanthinking.src} />
+                            {/* <img
+                                alt="testimonial"
+                                className=" mb-8 object-cover object-center  inline-block"
+                                src={Womanthinking.src}
+
+                            /> */}
+                            <Image
+                                alt="testimonial"
+                                className=" mb-8 object-cover object-center  inline-block"
+                                src={Womanthinking.src}
+                                width={300}
+                                height={100}
+                            />
+
                             <h1 className="text-[#212121] font-semibold text-[20px] ">Choose brands</h1>
                             <p className='text-[#212121] w-64 text-center mx-auto text-[16px] font-normal leading-[30px] '>Take complete control of your brand partnerships.</p>
 
@@ -24,14 +38,28 @@ const Features = () => {
                     </div>
                     <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                         <div className="h-full text-center">
-                            <img alt="testimonial" className=" mb-8 object-cover object-center  inline-block" src={Onlineshopping.src} />
+                            <Image
+                                alt="testimonial"
+                                className=" mb-8 object-cover object-center  inline-block"
+                                src={Onlineshopping.src}
+                                width={500}
+                                height={500}
+                            />
+                            {/* <img alt="testimonial" className=" mb-8 object-cover object-center  inline-block" src={Onlineshopping.src} /> */}
                             <h1 className="text-[#212121] font-semibold text-[20px] ">Free online store</h1>
                             <p className='text-[#212121] w-64 text-center mx-auto text-[16px] font-normal leading-[30px]'>Set up a free online store to promote the products from brands you love.</p>
                         </div>
                     </div>
                     <div className="lg:w-1/3 lg:mb-0 p-4">
                         <div className="h-full text-center">
-                            <img alt="testimonial" className=" mb-8 object-cover object-center  inline-block" src={Portfolio.src} />
+                            <Image
+                                alt="testimonial"
+                                className=" mb-8 object-cover object-center  inline-block"
+                                src={Portfolio.src}
+                                width={500}
+                                height={500}
+                            />
+                            {/* <img alt="testimonial" className=" mb-8 object-cover object-center  inline-block" src={Portfolio.src} /> */}
                             <h1 className="text-[#212121] font-semibold text-[20px] ">Create a portfolio</h1>
                             <p className='text-[#212121] w-64 text-center mx-auto text-[16px] font-normal leading-[30px] '>Showcase your talent and experience with a personalized portfolio.</p>
                         </div>

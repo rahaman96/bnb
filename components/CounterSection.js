@@ -4,18 +4,24 @@ import Rectangle2 from '../public/assets/images/Rectangle 2.png'
 import Rectangle3 from '../public/assets/images/Rectangle 3.png'
 import Rectangle4 from '../public/assets/images/Rectangle 4.png'
 import Rectangle5 from '../public/assets/images/Rectangle 5.png'
-
+import Image from 'next/image'
 const CounterSection = () => {
     return (
         <div>
-            
+
             <div class='bg-white py-5'>
                 <div class="contai mx-auto flex px- py- md:flex-row flex-col-reverse  items-center">
                     <div class="lg:max-w-lg lg:w-full md:w-2/5 w-5/6  md:mb-0 px-0 md:px-6 lg:px-10 mt-14 md:mt-0 lg:mt-0">
                         <div className='flex'>
                             <div className='relative'>
                                 <div className='lg:w-full md:w-[124px]'>
-                                    <img src={Rectangle1.src} alt="" />
+                                    {/* <img src={Rectangle1.src} alt="" /> */}
+                                    <Image
+                                        src={Rectangle1.src}
+                                        width={180}
+                                        height={180}
+                                        alt="Picture of the author"
+                                    />
                                 </div>
                                 <div className='absolute lg:top-14 lg:left-14 md:top-8 md:left-6 top-12 left-10'>
                                     <h5 className='text-center text-[#5A914D] lg:text-[32px] font-semibold'>10k+</h5>
@@ -25,7 +31,13 @@ const CounterSection = () => {
                             </div>
                             <div className='relative'>
                                 <div className='lg:w-full md:w-[124px]'>
-                                    <img src={Rectangle2.src} alt="" />
+                                    {/* <img src={Rectangle2.src} alt="" /> */}
+                                    <Image
+                                        src={Rectangle2.src}
+                                        width={180}
+                                        height={180}
+                                        alt="Picture of the author"
+                                    />
                                 </div>
                                 <div className='absolute lg:top-14 lg:left-14 md:top-8 md:left-6 top-12 left-10'>
                                     <h5 className='text-center text-[#5A914D] lg:text-[32px] font-semibold'>10k+</h5>
@@ -37,7 +49,13 @@ const CounterSection = () => {
                         <div className="flex">
                             <div className='relative'>
                                 <div className='lg:w-full md:w-[124px]'>
-                                    <img src={Rectangle3.src} alt="" />
+                                    {/* <img src={Rectangle3.src} alt="" /> */}
+                                    <Image
+                                        src={Rectangle3.src}
+                                        width={180}
+                                        height={180}
+                                        alt="Picture of the author"
+                                    />
                                 </div>
                                 <div className='absolute lg:top-14 lg:left-14 md:top-8 md:left-6 top-12 left-10'>
                                     <h5 className='text-center text-[#5A914D] lg:text-[32px] font-semibold'>10k+</h5>
@@ -46,7 +64,13 @@ const CounterSection = () => {
                             </div>
                             <div className='relative'>
                                 <div className='lg:w-full md:w-[124px]'>
-                                    <img src={Rectangle4.src} alt="" />
+                                    {/* <img src={Rectangle4.src} alt="" /> */}
+                                    <Image
+                                        src={Rectangle4.src}
+                                        width={180}
+                                        height={180}
+                                        alt="Picture of the author"
+                                    />
                                 </div>
                                 <div className='absolute lg:top-14 lg:left-14 md:top-8 md:left-6 top-12 left-10'>
                                     <h5 className='text-center text-[#5A914D] lg:text-[32px] font-semibold'>10k+</h5>
@@ -58,7 +82,13 @@ const CounterSection = () => {
 
                     <div class="lg:flex-grow md:w-3/5 lg:pl- md:pl- fle flex-col relative">
                         <div>
-                            <img className='lg:visible md:visible invisible' src={Rectangle5.src} alt="" />
+                            {/* <img className='lg:visible md:visible invisible' src={Rectangle5.src} alt="" /> */}
+                            <Image
+                                src={Rectangle5.src}
+                                width={1000}
+                                height={1000}
+                                className='lg:visible md:visible invisible'
+                            />
 
                         </div>
                         <div className='absolute lg:top-16 md:top-6 lg:left-[130px] md:left-[90px] -top-7 px-3 md:px-0 lg:px-0 bg-[#EEF4ED] py-5 md:py-0 lg:py-0 '>

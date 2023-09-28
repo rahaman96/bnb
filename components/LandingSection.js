@@ -5,13 +5,21 @@ import Rectangle2155 from '../public/assets/images/Rectangle 2155.png'
 import Rectangle2156 from '../public/assets/images/Rectangle 2156.png'
 import Rectangle2157 from '../public/assets/images/Rectangle 2157.png'
 import Rectangle2158 from '../public/assets/images/Rectangle 2158.png'
+import Image from 'next/image'
 const LandingSection = () => {
     return (
         <div>
             <div className='lg:flex md:flex  bg-[#E7ECF0] relative '>
                 <div className='lg:w-[813px] md:w-[813px] relative'>
                     <div className='lg:visible  md:visible invisible overflow-hidde'>
-                        <img src={Rectangle2150.src} alt="Rectangle2150" className='lg:h-full md:h-full h-[308px]' />
+                        {/* <img src={Rectangle2150.src} alt="Rectangle2150" className='lg:h-full md:h-full h-[308px]' /> */}
+                        <Image
+                            src={Rectangle2150.src}
+                            width={1000}
+                            height={308}
+                            alt="Picture of the author"
+                            className='lg:h-full md:h-full h-[308px]'
+                        />
                     </div>
                     <div className='absolute lg:top-14 md:top-6 top-5 bg-[#E7ECF0 px-3 md:px-6 lg:px-10'>
                         <h6 className='text-[#212121]  font-bold font-sans lg:text-[48px] lg:leading-[72px] lg:w-[609px] lg:h-[144px] md:text-[25px] md:w-[350px] md:h-[70px] text-[40px] leading-[50px] lg:text-left md:text-left text-center '>Helping brands grow with niche <span className='text-[#5A914D]'>influencers</span> </h6>
@@ -22,18 +30,55 @@ const LandingSection = () => {
                 <div className='lg:w-[627px] md:w-[627px] w-full relative'>
 
                     <div className='lg:mt-0 md:mt-0  mt-14 lg:mb-0 md:mb-0 mb-5 overflow-hidde'>
-                        <img src={Frame.src} alt="Frame" className='lg:h-full md:h-full h-[426px' />
+                        {/* <img src={Frame.src} alt="Frame" className='lg:h-full md:h-full h-[426px' /> */}
+                        <Image
+                            src={Frame.src}
+                            width={1000}
+                            height={426}
+                            alt="Picture of the author"
+                            className='lg:h-full md:h-full h-[308px]'
+                        />
                     </div>
 
                     <div className='absolute lg:top-4 md:top-4 -top-10 lg:left-[150px] md:left-[20%] left-[5%'>
                         <div className="flex lg:gap-4 md:gap-4 gap-8 justify-center ">
-                            <img src={Rectangle2155.src} alt="Rectangle2155" className='lg:w-[45%] md:w-[45%] w-[35%] ' />
-                            <img src={Rectangle2156.src} alt="Rectangle2156" className='lg:w-[40%] md:w-[40%] lg:h-[70%] md:h-[45%] h-[20%] w-[32%]' />
+                            <Image
+                                src={Rectangle2155.src}
+                                width={1000}
+                                height={208}
+                                alt="Picture of the author"
+                                className='lg:w-[45%] md:w-[45%] w-[35%] '
+                            />
+
+                            <Image
+                                src={Rectangle2156.src}
+                                width={1000}
+                                height={208}
+                                alt="Picture of the author"
+                                className='lg:w-[40%] md:w-[40%] lg:h-[70%] md:h-[45%] h-[20%] w-[32%]'
+                            />
+                            {/* <img src={Rectangle2155.src} alt="Rectangle2155" className='lg:w-[45%] md:w-[45%] w-[35%] ' /> */}
+                            {/* <img src={Rectangle2156.src} alt="Rectangle2156" className='lg:w-[40%] md:w-[40%] lg:h-[70%] md:h-[45%] h-[20%] w-[32%]' /> */}
 
                         </div>
                         <div className="flex lg:gap-4 md:gap-10 gap-8 lg:mt-5 justify-center items-center mx-auto">
-                            <img src={Rectangle2158.src} alt="Rectangle2158" className='lg:w-[40%] md:w-[35%] lg:h-[40%] lg:mt-10 md:mt-4 w-[35%] ' />
-                            <img src={Rectangle2157.src} alt="Rectangle2157" className='lg:w-[40%] md:w-[35%] lg:mt-[-50px] md:mt-[-30px] mt-[-20px] w-[33%]' />
+                            <Image
+                                src={Rectangle2158.src}
+                                width={1000}
+                                height={208}
+                                alt="Picture of the author"
+                                className='lg:w-[40%] md:w-[35%] lg:h-[40%] lg:mt-10 md:mt-4 w-[35%] '
+                            />
+                            <Image
+                                src={Rectangle2157.src}
+                                width={1000}
+                                height={208}
+                                alt="Picture of the author"
+                                className='lg:w-[40%] md:w-[35%] lg:mt-[-50px] md:mt-[-30px] mt-[-20px] w-[33%]'
+                            />
+
+                            {/* <img src={Rectangle2158.src} alt="Rectangle2158" className='lg:w-[40%] md:w-[35%] lg:h-[40%] lg:mt-10 md:mt-4 w-[35%] ' /> */}
+                            {/* <img src={Rectangle2157.src} alt="Rectangle2157" className='lg:w-[40%] md:w-[35%] lg:mt-[-50px] md:mt-[-30px] mt-[-20px] w-[33%]' /> */}
                         </div>
                     </div>
                 </div>
